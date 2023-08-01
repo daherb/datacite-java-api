@@ -1,0 +1,6 @@
+[submodule "src/main/resources/xml-schema"]
+	path = src/main/resources/xml-schema
+	url = https://github.com/datacite/schema/
+[submodule "src/main/resources/json-schema"]
+	path = src/main/resources/json-schema
+	url = https://github.com/inveniosoftware/datacite
