@@ -4,3 +4,6 @@
 [submodule "src/main/resources/json-schema"]
 	path = src/main/resources/json-schema
 	url = https://github.com/inveniosoftware/datacite
+[submodule "src/main/resources/rest-api"]
+	path = src/main/resources/rest-api
+	url = https://github.com/datacite/lupo
