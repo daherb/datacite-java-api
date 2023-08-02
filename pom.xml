@@ -87,7 +87,7 @@
                     </execution>
                 </executions>
                 <configuration>
-                    <mainClass>de.idsmannheim.lza.inveniojavaapi.InvenioJavaApiApplication</mainClass>
+                    <mainClass>de.idsmannheim.lza.datacitejavaapi.DataciteJavaApiApplication</mainClass>
                 </configuration>
             </plugin>
             <plugin>
