@@ -206,6 +206,21 @@ public class DataciteAPITools {
     public void closeAllConnections() {
         client.getHttpClient().connectionPool().evictAll();
     }
+    
+    /***
+     * Convert a URL into a DOI object that can be used simply for updating the URL
+     * @param url the new URL
+     * @return the DOI object
+     */
+    public Doi convertUrl(String url) {
+        // Create new Doi with new data and attributes
+        Doi newDoi = new Doi();
+        newDoi.data(new DoiData()).getData()
+                .attributes(new DoiAttributes()).getAttributes()
+                .setUrl(url);
+        return newDoi;
+    } 
+    
     /***
      * Convert Invenio metadata into a DOI object
      * @param metadata the Invenio metadata
