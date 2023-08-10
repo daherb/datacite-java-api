@@ -207,7 +207,7 @@ public class DataciteAPITools {
         client.getHttpClient().connectionPool().evictAll();
     }
     /***
-     * Convert Invenio metadata to a DOI
+     * Convert Invenio metadata into a DOI object
      * @param metadata the Invenio metadata
      * @return the Datacite DOI
      */
