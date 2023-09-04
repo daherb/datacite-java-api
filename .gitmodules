@@ -6,4 +6,4 @@
 	url = https://github.com/inveniosoftware/datacite
 [submodule "src/main/resources/rest-api"]
 	path = src/main/resources/rest-api
-	url = https://github.com/datacite/lupo
+	url = https://github.com/daherb/lupo
