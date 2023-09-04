@@ -171,7 +171,7 @@
                             <cleanupOutput>true</cleanupOutput>
                             <generateApis>true</generateApis>
                             <generateSupportingFiles>true</generateSupportingFiles>
-                            <supportingFilesToGenerate>JSON.java,ApiCallback.java,ApiClient.java,ApiException.java,ApiResponse.java,Pair.java,Configuration.java,Authentication.java,StringUtil.java,ApiKeyAuth.java,HttpBasicAuth.java,HttpBearerAuth.java,ServerConfiguration.java,ServerVariable.java,ProgressRequestBody.java</supportingFilesToGenerate>
+                            <supportingFilesToGenerate>JSON.java,ApiCallback.java,ApiClient.java,ApiException.java,ApiResponse.java,Pair.java,Configuration.java,Authentication.java,StringUtil.java,ApiKeyAuth.java,HttpBasicAuth.java,HttpBearerAuth.java,ServerConfiguration.java,ServerVariable.java,ProgressRequestBody.java,ProgressResponseBody.java</supportingFilesToGenerate>
                             <generateApiDocumentation>true</generateApiDocumentation>
                             <generateModelDocumentation>true</generateModelDocumentation>
                             <output>${project.basedir}</output>
