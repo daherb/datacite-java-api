@@ -68,7 +68,6 @@ public class DataciteAPITools {
      */
     public void deleteAllDraftDOIs(String prefix) throws ApiException {
         Dois dois = api.ListAllDOIs(prefix);
-        LOG.info(dois.toJson());
         for (DoisDataInner data : dois.getData()) {
             if (data != null && data.getAttributes() != null && data.getAttributes().getState() != null && data.getAttributes().getState().equals("draft")) {
                 LOG.info("Deleting " + data.getId());
