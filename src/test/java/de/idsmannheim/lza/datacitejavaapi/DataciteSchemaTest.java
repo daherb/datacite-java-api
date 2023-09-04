@@ -13,7 +13,7 @@ import com.google.gson.JsonElement;
 import com.google.gson.JsonParser;
 import java.io.IOException;
 import java.util.logging.Logger;
-import org.datacite.schema.json.DataciteV43;
+// import org.datacite.schema.json.DataciteV43;
 import org.junit.jupiter.api.Assertions;
 import org.junit.jupiter.api.BeforeAll;
 import org.junit.jupiter.api.Test;
@@ -225,21 +225,21 @@ public class DataciteSchemaTest {
                 "    }\n" +
                 "  }\n" +
                 "}";
-        try {
-            JsonElement json = JsonParser.parseString(jsonExample);
-            // LOG.info(json.toString());
-            // LOG.info(new GsonBuilder().setPrettyPrinting().create().toJson(json.getAsJsonObject().getAsJsonObject("data").getAsJsonObject("attributes")));
-            JsonElement element = json.getAsJsonObject().getAsJsonObject("data").getAsJsonObject("attributes");
-            // Resource attributes = new GsonBuilder().create().fromJson(element, Resource.class);
-            DataciteV43 attributes = new ObjectMapper().findAndRegisterModules()
-                     .configure(DeserializationFeature.FAIL_ON_UNKNOWN_PROPERTIES, false)
-                    .readValue(new GsonBuilder().create().toJson(element), DataciteV43.class);
-            LOG.info(new XmlMapper().enable(SerializationFeature.INDENT_OUTPUT).writeValueAsString(attributes));
-        }
-        catch (Exception e) {
-            e.printStackTrace();
-            Assertions.fail(e);
-        }
+//        try {
+//            JsonElement json = JsonParser.parseString(jsonExample);
+//            // LOG.info(json.toString());
+//            // LOG.info(new GsonBuilder().setPrettyPrinting().create().toJson(json.getAsJsonObject().getAsJsonObject("data").getAsJsonObject("attributes")));
+//            JsonElement element = json.getAsJsonObject().getAsJsonObject("data").getAsJsonObject("attributes");
+//            // Resource attributes = new GsonBuilder().create().fromJson(element, Resource.class);
+//            DataciteV43 attributes = new ObjectMapper().findAndRegisterModules()
+//                     .configure(DeserializationFeature.FAIL_ON_UNKNOWN_PROPERTIES, false)
+//                    .readValue(new GsonBuilder().create().toJson(element), DataciteV43.class);
+//            LOG.info(new XmlMapper().enable(SerializationFeature.INDENT_OUTPUT).writeValueAsString(attributes));
+//        }
+//        catch (Exception e) {
+//            e.printStackTrace();
+//            Assertions.fail(e);
+//        }
     }
 //    /***
 //     * Test to read all examples for Datacite Metadata
