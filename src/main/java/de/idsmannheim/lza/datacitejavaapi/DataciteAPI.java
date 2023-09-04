@@ -108,7 +108,7 @@ public class DataciteAPI {
         // TODO don't hardcode
         attributes.setPublisher("IDS Mannheim");
         attributes.setTypes(new DoiPropertiesMetadataTypes().resourceTypeGeneral(ResourceTypeGeneral.COLLECTION));
-        attributes.setContentUrl(new ArrayList<>());
+        attributes.setUrl("");
         data.attributes(attributes);
         doi.data(data);
         return api.doisPost(doi);
