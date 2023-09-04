@@ -42,6 +42,26 @@ public class DataciteAPITools {
     }
     
     /***
+     * Publishes all current draft DOIs
+     * @param prefix The prefix of the DOIs
+     * @throws org.datacite.ApiException
+     */
+    public void publishAllDraftDois(String prefix) throws ApiException {
+        Dois dois = api.ListAllDOIs(prefix);
+        for (DoisDataInner data : dois.getData()) {
+            if (data != null && data.getAttributes() != null && data.getAttributes().getState() != null && data.getAttributes().getState().equals("draft")) {
+                
+                // Registering makes a DOI permanent but not directly findable
+                LOG.info("Registering " + data.getId());
+                api.registerDraftDOI(data.getId());
+                // Publishing makes a DOI permanent and directly findable
+                // LOG.info("Publishing " + data.getId());
+                // api.publishDOI(data.getId());
+            }
+        }
+    }
+        
+    /***
      * Method to delete all draft DOIs registered for a prefix
      * @param prefix the prefix of the DOIs
      * @throws ApiException 
