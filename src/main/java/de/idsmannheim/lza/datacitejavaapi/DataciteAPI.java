@@ -75,7 +75,7 @@ public class DataciteAPI {
                         , null // sampleSize
                         , null // sampleGroup
                         , null // pageNumber
-                        , null // pageSize
+                        , Integer.MAX_VALUE // pageSize
                         , null // pageCursor
                         , null // include
                         , null // sort
