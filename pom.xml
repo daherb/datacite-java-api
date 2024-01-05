@@ -181,7 +181,7 @@
                             <supportingFilesToGenerate>JSON.java,ApiCallback.java,ApiClient.java,ApiException.java,ApiResponse.java,Pair.java,Configuration.java,Authentication.java,StringUtil.java,ApiKeyAuth.java,HttpBasicAuth.java,HttpBearerAuth.java,ServerConfiguration.java,ServerVariable.java,ProgressRequestBody.java,ProgressResponseBody.java</supportingFilesToGenerate>
                             <generateApiDocumentation>true</generateApiDocumentation>
                             <generateModelDocumentation>true</generateModelDocumentation>
-                            <output>${project.basedir}/src/main/java/generated</output>
+                            <output>${project.build.directory}/generated-sources</output>
                             <packageName>org.datacite.api</packageName>
                             <apiPackage>org.datacite.api</apiPackage>
                             <modelPackage>org.datacite.api.model</modelPackage>
