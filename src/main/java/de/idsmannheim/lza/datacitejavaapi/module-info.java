@@ -9,7 +9,7 @@ module datacite.java.api {
     requires okio;
     requires java.ws.rs;
     requires java.activation;
-    requires java.annotation;
+    requires jakarta.annotation;
     requires com.fasterxml.jackson.databind;
     requires org.openapitools.jackson.nullable;
     requires invenio.java.api;
