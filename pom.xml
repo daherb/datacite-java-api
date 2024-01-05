@@ -186,7 +186,7 @@
                             <supportingFilesToGenerate>JSON.java,ApiCallback.java,ApiClient.java,ApiException.java,ApiResponse.java,Pair.java,Configuration.java,Authentication.java,StringUtil.java,ApiKeyAuth.java,HttpBasicAuth.java,HttpBearerAuth.java,ServerConfiguration.java,ServerVariable.java,ProgressRequestBody.java,ProgressResponseBody.java</supportingFilesToGenerate>
                             <generateApiDocumentation>true</generateApiDocumentation>
                             <generateModelDocumentation>true</generateModelDocumentation>
-                            <output>${project.build.directory}/generated-sources</output>
+                            <output>${project.build.directory}/generated-sources/openapi</output>
                             <packageName>org.datacite.api</packageName>
                             <apiPackage>org.datacite.api</apiPackage>
                             <modelPackage>org.datacite.api.model</modelPackage>
@@ -214,7 +214,7 @@
                 </executions>
                 <configuration>
                     <basedir>
-                        ${project.build.directory}/generated-sources/
+                        ${project.build.directory}/generated-sources/openapi
                     </basedir>
                     <includes>
                         <include>**/*.java</include>
@@ -224,9 +224,9 @@
                             <token>javax.annotation</token>
                             <value>jakarta.annotation</value>
                         </replacement>
-						<replacement>
-							<token>import com.google.gson.internal.bind.util.ISO8601Utils</token>
-                        	<value>import com.fasterxml.jackson.databind.util.ISO8601Utils</value>
+			<replacement>
+                            <token>import com.google.gson.internal.bind.util.ISO8601Utils</token>
+                            <value>import com.fasterxml.jackson.databind.util.ISO8601Utils</value>
                         </replacement>
                     </replacements>
                 </configuration>
