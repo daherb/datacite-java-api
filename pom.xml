@@ -231,7 +231,7 @@
                             <token>javax.annotation</token>
                             <value>jakarta.annotation</value>
                         </replacement>
-			<replacement>
+                        <replacement>
                             <token>import com.google.gson.internal.bind.util.ISO8601Utils</token>
                             <value>import com.fasterxml.jackson.databind.util.ISO8601Utils</value>
                         </replacement>
