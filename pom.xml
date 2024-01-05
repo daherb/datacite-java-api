@@ -167,7 +167,7 @@
                 <groupId>org.openapitools</groupId>
                 <artifactId>openapi-generator-maven-plugin</artifactId>
                  <!--RELEASE_VERSION--> 
-                <version>6.3.0</version>
+                <version>7.2.0</version>
                  <!--/RELEASE_VERSION--> 
                 <executions>
                     <execution>
@@ -181,15 +181,15 @@
                             <supportingFilesToGenerate>JSON.java,ApiCallback.java,ApiClient.java,ApiException.java,ApiResponse.java,Pair.java,Configuration.java,Authentication.java,StringUtil.java,ApiKeyAuth.java,HttpBasicAuth.java,HttpBearerAuth.java,ServerConfiguration.java,ServerVariable.java,ProgressRequestBody.java,ProgressResponseBody.java</supportingFilesToGenerate>
                             <generateApiDocumentation>true</generateApiDocumentation>
                             <generateModelDocumentation>true</generateModelDocumentation>
-                            <output>${project.basedir}</output>
+                            <output>${project.basedir}/src/main/java/generated</output>
                             <packageName>org.datacite.api</packageName>
                             <apiPackage>org.datacite.api</apiPackage>
                             <modelPackage>org.datacite.api.model</modelPackage>
                             <inputSpec>${project.basedir}/src/main/resources/rest-api/openapi.yaml</inputSpec>
                             <generatorName>java</generatorName>
-                            <configOptions>
+                            <!-- configOptions>
                                <sourceFolder>src/main/java</sourceFolder>
-                            </configOptions>
+                            </configOptions -->
                         </configuration>
                     </execution>
                 </executions>
