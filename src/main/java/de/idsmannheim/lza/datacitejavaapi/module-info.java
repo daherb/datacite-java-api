@@ -8,7 +8,7 @@ module datacite.java.api {
     requires okhttp3.logging;
     requires okio;
     requires java.ws.rs;
-    requires java.activation;
+//    requires java.activation;
     requires jakarta.annotation;
     requires com.fasterxml.jackson.databind;
     requires org.openapitools.jackson.nullable;
